@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Problem - G.O AUTOMECH</title>
+    <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         <li><a href="location.html">Location</a></li>
+        <li><a href="report problem.html">Report problem</a></li>
+        <li><a href="rate us.html">Rate us</a></li>
+    </ul>
+</nav>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add additional styles for the form if needed */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        #problem-form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        #feedback {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Report a Problem</h1>
+    </header>
+
+    <!-- Problem Report Form -->
+    <section id="problem-form">
+        <form id="user-problem-form" onsubmit="return getFeedback()">
+            <label for="car-problem">Select a Car Problem:</label>
+            <select id="car-problem" name="car-problem" required>
+                <option value="" disabled selected>Select a problem</option>
+                <option value="Dead Battery">Dead Battery</option>
+                <option value="Flat Tire">Flat Tire</option>
+                <option value="Engine Overheating">Engine Overheating</option>
+                <option value="Brake Problems">Brake Problems</option>
+                <option value="Check Engine Light">Check Engine Light</option>
+                <option value="No Oil Pressure">No Oil Pressure</option>
+                <option value="Faulty Spark Plugs">Faulty Spark Plugs</option>
+                <option value="Dirty Air Filter">Dirty Air Filter</option>
+                <option value="Clogged Fuel Filter">Clogged Fuel Filter</option>
+                <option value="Faulty Oxygen Sensor">Faulty Oxygen Sensor</option>
+                <option value="Malfunctioning Fuel Pump">Malfunctioning Fuel Pump</option>
+                <option value="Faulty Ignition Coils">Faulty Ignition Coils</option>
+                <option value="Worn-Out Serpentine Belt">Worn-Out Serpentine Belt</option>
+                <option value="Leaky Radiator">Leaky Radiator</option>
+                <option value="Blown Fuse">Blown Fuse</option>
+                <option value="Faulty Wiper Blades">Faulty Wiper Blades</option>
+                <option value="Faulty Door Lock Actuators">Faulty Door Lock Actuators</option>
+                <option value="Faulty Window Regulators">Faulty Window Regulators</option>
+                <option value="Worn-Out CV Axles">Worn-Out CV Axles</option>
+                <option value="Sensor Issues">Sensor Issues</option>
+            </select>
+
+            <label for="problem-description">Describe the Problem:</label>
+            <textarea id="problem-description" name="problem-description" required></textarea>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </section>
+
+    <!-- Automatic Feedback -->
+    <section id="feedback">
+        <h2>Automatic Feedback</h2>
+        <p id="feedback-text"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 G.O AUTOMECH. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function getFeedback() {
+            var selectedProblem = document.getElementById('car-problem').value;
+            var problemDescription = document.getElementById('problem-description').value;
+            var feedbackText = document.getElementById('feedback-text');
+
+            // Add logic here to fetch automatic feedback based on the selected problem
+            // For now, a basic example is provided
+            switch (selectedProblem) {
+                case 'Dead Battery':
+                    feedbackText.textContent = 'Possible solution: Jumpstart the battery or replace it if necessary.';
+                    break;
+                case 'Flat Tire':
+                    feedbackText.textContent = 'Possible solution: Change the tire with the spare or get it repaired.';
+                    break;
+                case 'Engine Overheating':
+                    feedbackText.textContent = 'Possible solution: Pull over and turn off the engine immediately, let it cool down, check coolant levels, call for roadside assistance if necessary.';
+                    break;
+                case 'Brake Problems':
+                    feedbackText.textContent = 'Possible solution: Get brakes inspected and repaired by a mechanic, avoid riding the brakes, replace worn brake pads or rotors.';
+                    break;
+                case 'Check Engine Light':
+                    feedbackText.textContent = 'Possible solution: Have the car scanned for diagnostic codes, address the underlying issue based on the code (e.g., replace faulty sensor, fix emissions problem).';
+                    break;
+                case 'No Oil Pressure':
+                    feedbackText.textContent = 'Possible solution: Stop driving immediately, check oil level and add oil if necessary, have the engine inspected for internal damage if the light stays on.';
+                    break;
+                case 'Faulty Spark Plugs':
+                    feedbackText.textContent = 'Possible solution: Replace spark plugs with new ones according to manufacturer\'s recommendations.';
+                    break;
+                case 'Dirty Air Filter':
+                    feedbackText.textContent = 'Possible solution: Clean or replace the air filter regularly.';
+                    break;
+                case 'Clogged Fuel Filter':
+                    feedbackText.textContent = 'Possible solution: Replace the fuel filter according to manufacturer\'s recommendations.';
+                    break;
+                case 'Faulty Oxygen Sensor':
+                    feedbackText.textContent = 'Possible solution: Replace the oxygen sensor with a new one.';
+                    break;
+                case 'Malfunctioning Fuel Pump':
+                    feedbackText.textContent = 'Possible solution: Have the fuel pump inspected and replaced if necessary.';
+                    break;
+                case 'Faulty Ignition Coils':
+                    feedbackText.textContent = 'Possible solution: Replace faulty ignition coils with new ones.';
+                    break;
+                case 'Worn-Out Serpentine Belt':
+                    feedbackText.textContent = 'Possible solution: Replace the serpentine belt with a new one.';
+                    break;
+                case 'Leaky Radiator':
+                    feedbackText.textContent = 'Possible solution: Repair or replace the radiator, top up coolant levels.';
+                    break;
+                case 'Blown Fuse':
+                    feedbackText.textContent = 'Possible solution: Check and replace blown fuses with new ones of the correct amperage.';
+                    break;
+                case 'Faulty Wiper Blades':
+                    feedbackText.textContent = 'Possible solution: Replace wiper blades with new ones.';
+                    break;
+                case 'Faulty Door Lock Actuators':
+                    feedbackText.textContent = 'Possible solution: Repair or replace door lock actuators.';
+                    break;
+                case 'Faulty Window Regulators':
+                    feedbackText.textContent = 'Possible solution: Repair or replace window regulators.';
+                    break;
+                case 'Worn-Out CV Axles':
+                    feedbackText.textContent = 'Possible solution: Replace worn CV axles with new ones.';
+                    break;
+                case 'Sensor Issues':
+                    feedbackText.textContent = 'Possible solution: Have the sensors scanned and diagnosed, repair or replace them if necessary.';
+                    break;
+                default:
+                    feedbackText.textContent = 'Automatic feedback not available. Please visit us for assistance.';
+            }
+
+            return false; // Prevent the form from submitting
+        }
+    </script>
+
+</body>
+
+</html>
