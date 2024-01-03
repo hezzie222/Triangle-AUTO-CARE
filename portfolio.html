@@ -1,5 +1,3 @@
-<!-- portfolio.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,106 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - G.O AUTOMECH</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Added styles for smaller images */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        /* Styles for larger image preview */
+        .preview-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            display: none;
+        }
+
+        .preview-img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>Portfolio - G.O AUTOMECH</h1>
+    </header>
 
-    <!-- Content for Portfolio Page -->
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         <li><a href="location.html">Location</a></li>
+        <li><a href="report problem.html">Report problem</a></li>
+        <li><a href="rate us.html">Rate us</a></li>
+        </ul>
+    </nav>
+
     <section id="portfolio">
         <h2>Our Portfolio</h2>
-        <div class="photo-gallery">
-            <!-- Add all 91 images here -->
-            <img src="images/photo1 (1).jpg" alt="Work Example 1">
-        <img src="images/photo1 (2).jpg" alt="Work Example 2">
-        <img src="images/photo1 (3).jpg" alt="Work Example 3">
-        <img src="images/photo1 (4).jpg" alt="Work Example 4">
-        <img src="images/photo1 (5).jpg" alt="Work Example 5">
-        <img src="images/photo1 (6).jpg" alt="Work Example 6">
-        <img src="images/photo1 (7).jpg" alt="Work Example 7">
-        <img src="images/photo1 (8).jpg" alt="Work Example 8">
-        <img src="images/photo1 (9).jpg" alt="Work Example 9">
-        <img src="images/photo1 (10).jpg" alt="Work Example 10">
-        <img src="images/photo1 (11).jpg" alt="Work Example 11">
-        <img src="images/photo1 (12).jpg" alt="Work Example 12">
-        <img src="images/photo1 (13).jpg" alt="Work Example 13">
-        <img src="images/photo1 (14).jpg" alt="Work Example 14">
-        <img src="images/photo1 (15).jpg" alt="Work Example 15">
-        <img src="images/photo1 (16).jpg" alt="Work Example 16">
-        <img src="images/photo1 (17).jpg" alt="Work Example 17">
-        <img src="images/photo1 (18).jpg" alt="Work Example 18">
-        <img src="images/photo1 (19).jpg" alt="Work Example 19">
-        <img src="images/photo1 (20).jpg" alt="Work Example 20">
-        <img src="images/photo1 (21).jpg" alt="Work Example 21">
-        <img src="images/photo1 (22).jpg" alt="Work Example 22">
-        <img src="images/photo1 (23).jpg" alt="Work Example 23">
-        <img src="images/photo1 (24).jpg" alt="Work Example 24">
-        <img src="images/photo1 (25).jpg" alt="Work Example 25">
-        <img src="images/photo1 (26).jpg" alt="Work Example 26">
-        <img src="images/photo1 (27).jpg" alt="Work Example 27">
-        <img src="images/photo1 (28).jpg" alt="Work Example 28">
-        <img src="images/photo1 (29).jpg" alt="Work Example 29">
-        <img src="images/photo1 (30).jpg" alt="Work Example 30">
-        <img src="images/photo1 (31).jpg" alt="Work Example 31">
-        <img src="images/photo1 (32).jpg" alt="Work Example 32">
-        <img src="images/photo1 (33).jpg" alt="Work Example 33">
-        <img src="images/photo1 (34).jpg" alt="Work Example 34">
-        <img src="images/photo1 (35).jpg" alt="Work Example 35">
-        <img src="images/photo1 (36).jpg" alt="Work Example 36">
-        <img src="images/photo1 (37).jpg" alt="Work Example 37">
-        <img src="images/photo1 (38).jpg" alt="Work Example 38">
-        <img src="images/photo1 (39).jpg" alt="Work Example 39">
-        <img src="images/photo1 (40).jpg" alt="Work Example 40">
-        <img src="images/photo1 (41).jpg" alt="Work Example 41">
-        <img src="images/photo1 (42).jpg" alt="Work Example 42">
-        <img src="images/photo1 (43).jpg" alt="Work Example 43">
-        <img src="images/photo1 (44).jpg" alt="Work Example 44">
-        <img src="images/photo1 (45).jpg" alt="Work Example 45">
-        <img src="images/photo1 (46).jpg" alt="Work Example 46">
-        <img src="images/photo1 (47).jpg" alt="Work Example 47">
-        <img src="images/photo1 (48).jpg" alt="Work Example 48">
-        <img src="images/photo1 (49).jpg" alt="Work Example 49">
-        <img src="images/photo1 (50).jpg" alt="Work Example 50">
-        <img src="images/photo1 (51).jpg" alt="Work Example 51">
-        <img src="images/photo1 (52).jpg" alt="Work Example 52">
-        <img src="images/photo1 (53).jpg" alt="Work Example 53">
-        <img src="images/photo1 (54).jpg" alt="Work Example 54">
-        <img src="images/photo1 (55).jpg" alt="Work Example 55">
-        <img src="images/photo1 (56).jpg" alt="Work Example 56">
-        <img src="images/photo1 (57).jpg" alt="Work Example 57">
-        <img src="images/photo1 (58).jpg" alt="Work Example 58">
-        <img src="images/photo1 (59).jpg" alt="Work Example 59">
-        <img src="images/photo1 (60).jpg" alt="Work Example 60">
-        <img src="images/photo1 (61).jpg" alt="Work Example 61">
-        <img src="images/photo1 (62).jpg" alt="Work Example 62">
-        <img src="images/photo1 (63).jpg" alt="Work Example 63">
-        <img src="images/photo1 (64).jpg" alt="Work Example 64">
-        <img src="images/photo1 (65).jpg" alt="Work Example 65">
-        <img src="images/photo1 (66).jpg" alt="Work Example 66">
-        <img src="images/photo1 (67).jpg" alt="Work Example 67">
-        <img src="images/photo1 (68).jpg" alt="Work Example 68">
-        <img src="images/photo1 (69).jpg" alt="Work Example 69">
-        <img src="images/photo1 (70).jpg" alt="Work Example 70">
-        <img src="images/photo1 (71).jpg" alt="Work Example 71">
-        <img src="images/photo1 (72).jpg" alt="Work Example 72">
-        <img src="images/photo1 (73).jpg" alt="Work Example 73">
-        <img src="images/photo1 (74).jpg" alt="Work Example 74">
-        <img src="images/photo1 (75).jpg" alt="Work Example 75">
-        <img src="images/photo1 (76).jpg" alt="Work Example 76">
-        <img src="images/photo1 (77).jpg" alt="Work Example 77">
-        <img src="images/photo1 (78).jpg" alt="Work Example 78">
-        <img src="images/photo1 (79).jpg" alt="Work Example 79">
-        <img src="images/photo1 (80).jpg" alt="Work Example 80">
-        <img src="images/photo1 (81).jpg" alt="Work Example 81">
-        <img src="images/photo1 (82).jpg" alt="Work Example 82">
-        <img src="images/photo1 (83).jpg" alt="Work Example 83">
-        <img src="images/photo1 (84).jpg" alt="Work Example 84">
-        <img src="images/photo1 (85).jpg" alt="Work Example 85">
-        <img src="images/photo1 (86).jpg" alt="Work Example 86">
-        <img src="images/photo1 (87).jpg" alt="Work Example 87">
-        <img src="images/photo1 (88).jpg" alt="Work Example 88">
-        <img src="images/photo1 (89).jpg" alt="Work Example 89">
-        <img src="images/photo1 (90).jpg" alt="Work Example 90">
-        <img src="images/photo1 (91).jpg" alt="Work Example 91">
+
+        <!-- Smaller Images -->
+        <div class="gallery">
+            <!-- JavaScript will dynamically generate these image elements -->
+        </div>
+
+        <!-- Larger Image Preview Container -->
+        <div class="preview-container" id="previewContainer" onclick="hidePreview()">
+            <img class="preview-img" id="previewImg" onclick="openModal()">
+        </div>
+
+        <!-- Larger Image Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
         </div>
     </section>
 
@@ -115,6 +84,44 @@
         <p>&copy; 2023 G.O AUTOMECH. All rights reserved.</p>
     </footer>
 
+    <script>
+        function openModal() {
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById('modalImg');
+            modal.style.display = 'block';
+            modalImg.src = document.getElementById('previewImg').src;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        function showPreview(imagePath) {
+            var previewContainer = document.getElementById('previewContainer');
+            var previewImg = document.getElementById('previewImg');
+            previewImg.src = imagePath;
+            previewContainer.style.display = 'flex';
+        }
+
+        function hidePreview() {
+            var previewContainer = document.getElementById('previewContainer');
+            previewContainer.style.display = 'none';
+        }
+
+        // Dynamically generate smaller images
+        var gallery = document.querySelector('.gallery');
+        for (var i = 1; i <= 91; i++) {
+            var imagePath = 'images/photo1 (' + i + ').jpg';
+            var img = document.createElement('img');
+            img.src = imagePath;
+            img.alt = 'Work Example ' + i;
+            img.onclick = function () {
+                showPreview(this.src);
+            };
+            gallery.appendChild(img);
+        }
+    </script>
 </body>
 
 </html>
